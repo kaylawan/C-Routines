@@ -1,26 +1,85 @@
-- explain how you initialize the heap before the first malloc is called
+- Is there a reliable way of freeing the memory associated with c-routine?
+  explain how you did it
 
-i actually don't initialize the heap before the first malloc is called LOL. 
-the heap is initalized the first time my_malloc is called. first_block 
-is initialized as null originally so malloc checks if it is null, and 
-if it is it means the heap hasn't been initialized yet. to initialize 
-the heap, we create the first block with a metadata about the memory 
-block where i initalize the size of the block as well as setting it to 
-free. now, the heap is initalized with its first memory block.
-
-- malloc and free are an integral part of the C runtime. Explain how we're able to replace them with our own implementation.
-
-We are able to replace malloc and free with our own implementation by 
-including our implementation in our program's source code and ensuring 
-that it is compiled and linked into our program instead of the standard
- library implementation by undefining the orignal malloc and free 
- functions. 
-
-- why did I resort to pre-processor trickery (e.g. #undef malloc,
-  #define malloc my_malloc, ...)? What are the alternatives?
+  I believe there is a reliable way, but I did not implement it. If I were the free 
+  the memory associated with the routine, I would implement a helper freeing 
+  function to free other routines because if I were to free a routine within 
+  itself, it would not work. 
   
-  Pre-processor tricky was necessary to prevent us from cheating 
-  actually implementing malloc in free. If the original malloc/free 
-  were not undefined and redefined with our own implementation, an 
-  alternative solution would be that we could have just called the 
-  actual malloc() in my_malloc and same with calling free() in my_free(). 
+- Is there a reliable way of freeing the memory associated with a channel?
+  explain how you did it
+
+  The challenge with releasing a channel is that it may still have an active
+   pointer from an external program, and it appears to be unachievable through
+   conventional means. One possible workaround is to redefine all "Channel" 
+   pointers to refer to a "channel hub" instead of individual channels. This 
+   hub would contain pointers to the actual channels. By doing this, when a 
+   channel is released, the user's "pointer" would now redirect to an empty 
+   slot in the channel hub, and an error message could be generated to notify 
+   the user.
+
+- Read about the following programming abstractions and explain how they
+  relate to the current assignment:
+
+       * Continuations: Continuations refer to the program's state, and 
+       they are functions that represent the remaining code to be executed. 
+       These functions can be passed as arguments to other functions. In 
+       our project, the continuation is represented by the return address 
+       and registers that are pushed by the magic() function. These values 
+       capture the state of the program at specific points, and they enable 
+       us to move between various program states.
+
+       * Closures: Closures are functions that retain access to variables from
+        their enclosing scope even after they've returned. They differ from 
+        continuations in that they represent a single, persistent state that 
+        can be invoked repeatedly. In our project, several methods in go.c use 
+        closures because they manipulate queues that need to be shared across 
+        multiple function calls. This means that any changes made to a Queue
+         affect all continuations that rely on go.c functions
+
+       * Threads: Threads in C are a way of achieving parallelism by dividing a 
+       program into multiple execution threads. Each thread runs independently and 
+       can perform its own set of operations while sharing the same memory space. 
+       In my program, threads are not used explicitly. However, coroutines (also 
+       known as cooperative threads) are used instead to achieve concurrency by 
+       creating multiple routines, each with their own stack and a channel for 
+       communication with other routines. These routines are added to a queue and
+        executed by a scheduler, which switches between them using the context 
+        switch function go_again.
+
+       * Co-routines: Coroutines are functions that can pause execution and resume
+       later, allowing multiple "threads" of execution to run concurrently in a single 
+       process. My program uses coroutines to simulate a form of concurrency that is
+        similar to multithreading but avoids the overhead and complexity of using actual threads.
+
+       * Green threads: green threads are user-level threads that are scheduled by the 
+       application instead of the operating system. In my code, the createRoutine() function 
+       is creating a new coroutine and go() function is scheduling the coroutine to run. 
+       The removeQ() and addQ() functions are maintaining a queue of ready coroutines. When
+        a coroutine is scheduled to run, it is removed from the queue and its context is 
+        restored using magic() function. The again() function switches to another coroutine, 
+        allowing the current coroutine to be rescheduled later. The end() function is called 
+        when a coroutine finishes its execution.
+
+       * Fibers: Fibers are a type of lightweight cooperative multitasking, where a program can
+        have multiple execution contexts, and each context can run in its own stack space, and 
+        switch between contexts at specific points. In my code, fibers are implemented using the
+        Routine struct, which represents an execution context with its own stack, saved rsp (stack pointer),
+        and a function pointer to the current function being executed. The Queue struct is used to manage 
+        the scheduling of fibers, with the addQ() and removeQ() functions adding and removing Routine
+        objects from the readyQ queue.
+
+       * non-local goto: Non-local gotos in C are a mechanism for jumping from one function to 
+       another outside of the normal control flow. I don't really use non-local gotos, and instead 
+       use a coroutine system using queues and stack manipulation. 
+
+       * Python async/await: Python async/await is a programming paradigm for asynchronous programming in 
+       Python. It allows you to write asynchronous code in a synchronous style, making it easier to write 
+       and read. My code uses coroutines to implement a cooperative multitasking system, an alternative 
+       approach to asynchronous programming than Python's async/await paradigm
+
+       * C++20 coroutines: C++ coroutines are a language feature added in C++20, designed to simplify
+        writing asynchronous code. They allow you to write code that appears to be synchronous, while 
+        still being able to handle asynchronous tasks. It relates to a major concept in the assignment where 
+        when a coroutine is suspended, its state is saved, and control is returned to the caller. When
+        a coroutine is resumed, its state is restored, and it continues executing from where it left off.

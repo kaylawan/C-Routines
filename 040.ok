@@ -1,0 +1,1002 @@
+A: 1, B: 20, C: 20
+MOVE: A -> B, 1
+A: 2, B: 1, C: 20
+MOVE: A -> C, 2
+A: 3, B: 1, C: 2
+MOVE: B -> C, 1
+A: 3, B: 20, C: 1
+MOVE: A -> B, 3
+A: 20, B: 3, C: 1
+MOVE: C -> A, 1
+A: 1, B: 3, C: 2
+MOVE: C -> B, 2
+A: 1, B: 2, C: 20
+MOVE: A -> B, 1
+Success in 7 moves!
+A: 1, B: 20, C: 20
+MOVE: A -> B, 1
+A: 2, B: 1, C: 20
+MOVE: A -> C, 2
+A: 3, B: 1, C: 2
+MOVE: B -> C, 1
+A: 3, B: 20, C: 1
+MOVE: A -> B, 3
+A: 4, B: 3, C: 1
+MOVE: C -> A, 1
+A: 1, B: 3, C: 2
+MOVE: C -> B, 2
+A: 1, B: 2, C: 20
+MOVE: A -> B, 1
+A: 4, B: 1, C: 20
+MOVE: A -> C, 4
+A: 20, B: 1, C: 4
+MOVE: B -> C, 1
+A: 20, B: 2, C: 1
+MOVE: B-> A, 2
+A: 2, B: 3, C: 1
+MOVE: C -> A, 1
+A: 1, B: 3, C: 4
+MOVE: B -> C, 3
+A: 1, B: 20, C: 3
+MOVE: A -> B, 1
+A: 2, B: 1, C: 3
+MOVE: A -> C, 2
+A: 20, B: 1, C: 2
+MOVE: B -> C, 1
+Success in 15 moves!
+A: 1, B: 20, C: 20
+MOVE: A -> B, 1
+A: 2, B: 1, C: 20
+MOVE: A -> C, 2
+A: 3, B: 1, C: 2
+MOVE: B -> C, 1
+A: 3, B: 20, C: 1
+MOVE: A -> B, 3
+A: 4, B: 3, C: 1
+MOVE: C -> A, 1
+A: 1, B: 3, C: 2
+MOVE: C -> B, 2
+A: 1, B: 2, C: 20
+MOVE: A -> B, 1
+A: 4, B: 1, C: 20
+MOVE: A -> C, 4
+A: 5, B: 1, C: 4
+MOVE: B -> C, 1
+A: 5, B: 2, C: 1
+MOVE: B-> A, 2
+A: 2, B: 3, C: 1
+MOVE: C -> A, 1
+A: 1, B: 3, C: 4
+MOVE: B -> C, 3
+A: 1, B: 20, C: 3
+MOVE: A -> B, 1
+A: 2, B: 1, C: 3
+MOVE: A -> C, 2
+A: 5, B: 1, C: 2
+MOVE: B -> C, 1
+A: 5, B: 20, C: 1
+MOVE: A -> B, 5
+A: 20, B: 5, C: 1
+MOVE: C -> A, 1
+A: 1, B: 5, C: 2
+MOVE: C -> B, 2
+A: 1, B: 2, C: 3
+MOVE: A -> B, 1
+A: 20, B: 1, C: 3
+MOVE: C -> A, 3
+A: 3, B: 1, C: 4
+MOVE: B -> C, 1
+A: 3, B: 2, C: 1
+MOVE: B-> A, 2
+A: 2, B: 5, C: 1
+MOVE: C -> A, 1
+A: 1, B: 5, C: 4
+MOVE: C -> B, 4
+A: 1, B: 4, C: 20
+MOVE: A -> B, 1
+A: 2, B: 1, C: 20
+MOVE: A -> C, 2
+A: 3, B: 1, C: 2
+MOVE: B -> C, 1
+A: 3, B: 4, C: 1
+MOVE: A -> B, 3
+A: 20, B: 3, C: 1
+MOVE: C -> A, 1
+A: 1, B: 3, C: 2
+MOVE: C -> B, 2
+A: 1, B: 2, C: 20
+MOVE: A -> B, 1
+Success in 31 moves!
+A: 1, B: 20, C: 20
+MOVE: A -> B, 1
+A: 2, B: 1, C: 20
+MOVE: A -> C, 2
+A: 3, B: 1, C: 2
+MOVE: B -> C, 1
+A: 3, B: 20, C: 1
+MOVE: A -> B, 3
+A: 4, B: 3, C: 1
+MOVE: C -> A, 1
+A: 1, B: 3, C: 2
+MOVE: C -> B, 2
+A: 1, B: 2, C: 20
+MOVE: A -> B, 1
+A: 4, B: 1, C: 20
+MOVE: A -> C, 4
+A: 5, B: 1, C: 4
+MOVE: B -> C, 1
+A: 5, B: 2, C: 1
+MOVE: B-> A, 2
+A: 2, B: 3, C: 1
+MOVE: C -> A, 1
+A: 1, B: 3, C: 4
+MOVE: B -> C, 3
+A: 1, B: 20, C: 3
+MOVE: A -> B, 1
+A: 2, B: 1, C: 3
+MOVE: A -> C, 2
+A: 5, B: 1, C: 2
+MOVE: B -> C, 1
+A: 5, B: 20, C: 1
+MOVE: A -> B, 5
+A: 6, B: 5, C: 1
+MOVE: C -> A, 1
+A: 1, B: 5, C: 2
+MOVE: C -> B, 2
+A: 1, B: 2, C: 3
+MOVE: A -> B, 1
+A: 6, B: 1, C: 3
+MOVE: C -> A, 3
+A: 3, B: 1, C: 4
+MOVE: B -> C, 1
+A: 3, B: 2, C: 1
+MOVE: B-> A, 2
+A: 2, B: 5, C: 1
+MOVE: C -> A, 1
+A: 1, B: 5, C: 4
+MOVE: C -> B, 4
+A: 1, B: 4, C: 20
+MOVE: A -> B, 1
+A: 2, B: 1, C: 20
+MOVE: A -> C, 2
+A: 3, B: 1, C: 2
+MOVE: B -> C, 1
+A: 3, B: 4, C: 1
+MOVE: A -> B, 3
+A: 6, B: 3, C: 1
+MOVE: C -> A, 1
+A: 1, B: 3, C: 2
+MOVE: C -> B, 2
+A: 1, B: 2, C: 20
+MOVE: A -> B, 1
+A: 6, B: 1, C: 20
+MOVE: A -> C, 6
+A: 20, B: 1, C: 6
+MOVE: B -> C, 1
+A: 20, B: 2, C: 1
+MOVE: B-> A, 2
+A: 2, B: 3, C: 1
+MOVE: C -> A, 1
+A: 1, B: 3, C: 6
+MOVE: B -> C, 3
+A: 1, B: 4, C: 3
+MOVE: A -> B, 1
+A: 2, B: 1, C: 3
+MOVE: A -> C, 2
+A: 20, B: 1, C: 2
+MOVE: B -> C, 1
+A: 20, B: 4, C: 1
+MOVE: B-> A, 4
+A: 4, B: 5, C: 1
+MOVE: C -> A, 1
+A: 1, B: 5, C: 2
+MOVE: C -> B, 2
+A: 1, B: 2, C: 3
+MOVE: A -> B, 1
+A: 4, B: 1, C: 3
+MOVE: C -> A, 3
+A: 3, B: 1, C: 6
+MOVE: B -> C, 1
+A: 3, B: 2, C: 1
+MOVE: B-> A, 2
+A: 2, B: 5, C: 1
+MOVE: C -> A, 1
+A: 1, B: 5, C: 6
+MOVE: B -> C, 5
+A: 1, B: 20, C: 5
+MOVE: A -> B, 1
+A: 2, B: 1, C: 5
+MOVE: A -> C, 2
+A: 3, B: 1, C: 2
+MOVE: B -> C, 1
+A: 3, B: 20, C: 1
+MOVE: A -> B, 3
+A: 4, B: 3, C: 1
+MOVE: C -> A, 1
+A: 1, B: 3, C: 2
+MOVE: C -> B, 2
+A: 1, B: 2, C: 5
+MOVE: A -> B, 1
+A: 4, B: 1, C: 5
+MOVE: A -> C, 4
+A: 20, B: 1, C: 4
+MOVE: B -> C, 1
+A: 20, B: 2, C: 1
+MOVE: B-> A, 2
+A: 2, B: 3, C: 1
+MOVE: C -> A, 1
+A: 1, B: 3, C: 4
+MOVE: B -> C, 3
+A: 1, B: 20, C: 3
+MOVE: A -> B, 1
+A: 2, B: 1, C: 3
+MOVE: A -> C, 2
+A: 20, B: 1, C: 2
+MOVE: B -> C, 1
+Success in 63 moves!
+A: 1, B: 20, C: 20
+MOVE: A -> B, 1
+A: 2, B: 1, C: 20
+MOVE: A -> C, 2
+A: 3, B: 1, C: 2
+MOVE: B -> C, 1
+A: 3, B: 20, C: 1
+MOVE: A -> B, 3
+A: 4, B: 3, C: 1
+MOVE: C -> A, 1
+A: 1, B: 3, C: 2
+MOVE: C -> B, 2
+A: 1, B: 2, C: 20
+MOVE: A -> B, 1
+A: 4, B: 1, C: 20
+MOVE: A -> C, 4
+A: 5, B: 1, C: 4
+MOVE: B -> C, 1
+A: 5, B: 2, C: 1
+MOVE: B-> A, 2
+A: 2, B: 3, C: 1
+MOVE: C -> A, 1
+A: 1, B: 3, C: 4
+MOVE: B -> C, 3
+A: 1, B: 20, C: 3
+MOVE: A -> B, 1
+A: 2, B: 1, C: 3
+MOVE: A -> C, 2
+A: 5, B: 1, C: 2
+MOVE: B -> C, 1
+A: 5, B: 20, C: 1
+MOVE: A -> B, 5
+A: 6, B: 5, C: 1
+MOVE: C -> A, 1
+A: 1, B: 5, C: 2
+MOVE: C -> B, 2
+A: 1, B: 2, C: 3
+MOVE: A -> B, 1
+A: 6, B: 1, C: 3
+MOVE: C -> A, 3
+A: 3, B: 1, C: 4
+MOVE: B -> C, 1
+A: 3, B: 2, C: 1
+MOVE: B-> A, 2
+A: 2, B: 5, C: 1
+MOVE: C -> A, 1
+A: 1, B: 5, C: 4
+MOVE: C -> B, 4
+A: 1, B: 4, C: 20
+MOVE: A -> B, 1
+A: 2, B: 1, C: 20
+MOVE: A -> C, 2
+A: 3, B: 1, C: 2
+MOVE: B -> C, 1
+A: 3, B: 4, C: 1
+MOVE: A -> B, 3
+A: 6, B: 3, C: 1
+MOVE: C -> A, 1
+A: 1, B: 3, C: 2
+MOVE: C -> B, 2
+A: 1, B: 2, C: 20
+MOVE: A -> B, 1
+A: 6, B: 1, C: 20
+MOVE: A -> C, 6
+A: 7, B: 1, C: 6
+MOVE: B -> C, 1
+A: 7, B: 2, C: 1
+MOVE: B-> A, 2
+A: 2, B: 3, C: 1
+MOVE: C -> A, 1
+A: 1, B: 3, C: 6
+MOVE: B -> C, 3
+A: 1, B: 4, C: 3
+MOVE: A -> B, 1
+A: 2, B: 1, C: 3
+MOVE: A -> C, 2
+A: 7, B: 1, C: 2
+MOVE: B -> C, 1
+A: 7, B: 4, C: 1
+MOVE: B-> A, 4
+A: 4, B: 5, C: 1
+MOVE: C -> A, 1
+A: 1, B: 5, C: 2
+MOVE: C -> B, 2
+A: 1, B: 2, C: 3
+MOVE: A -> B, 1
+A: 4, B: 1, C: 3
+MOVE: C -> A, 3
+A: 3, B: 1, C: 6
+MOVE: B -> C, 1
+A: 3, B: 2, C: 1
+MOVE: B-> A, 2
+A: 2, B: 5, C: 1
+MOVE: C -> A, 1
+A: 1, B: 5, C: 6
+MOVE: B -> C, 5
+A: 1, B: 20, C: 5
+MOVE: A -> B, 1
+A: 2, B: 1, C: 5
+MOVE: A -> C, 2
+A: 3, B: 1, C: 2
+MOVE: B -> C, 1
+A: 3, B: 20, C: 1
+MOVE: A -> B, 3
+A: 4, B: 3, C: 1
+MOVE: C -> A, 1
+A: 1, B: 3, C: 2
+MOVE: C -> B, 2
+A: 1, B: 2, C: 5
+MOVE: A -> B, 1
+A: 4, B: 1, C: 5
+MOVE: A -> C, 4
+A: 7, B: 1, C: 4
+MOVE: B -> C, 1
+A: 7, B: 2, C: 1
+MOVE: B-> A, 2
+A: 2, B: 3, C: 1
+MOVE: C -> A, 1
+A: 1, B: 3, C: 4
+MOVE: B -> C, 3
+A: 1, B: 20, C: 3
+MOVE: A -> B, 1
+A: 2, B: 1, C: 3
+MOVE: A -> C, 2
+A: 7, B: 1, C: 2
+MOVE: B -> C, 1
+A: 7, B: 20, C: 1
+MOVE: A -> B, 7
+A: 20, B: 7, C: 1
+MOVE: C -> A, 1
+A: 1, B: 7, C: 2
+MOVE: C -> B, 2
+A: 1, B: 2, C: 3
+MOVE: A -> B, 1
+A: 20, B: 1, C: 3
+MOVE: C -> A, 3
+A: 3, B: 1, C: 4
+MOVE: B -> C, 1
+A: 3, B: 2, C: 1
+MOVE: B-> A, 2
+A: 2, B: 7, C: 1
+MOVE: C -> A, 1
+A: 1, B: 7, C: 4
+MOVE: C -> B, 4
+A: 1, B: 4, C: 5
+MOVE: A -> B, 1
+A: 2, B: 1, C: 5
+MOVE: A -> C, 2
+A: 3, B: 1, C: 2
+MOVE: B -> C, 1
+A: 3, B: 4, C: 1
+MOVE: A -> B, 3
+A: 20, B: 3, C: 1
+MOVE: C -> A, 1
+A: 1, B: 3, C: 2
+MOVE: C -> B, 2
+A: 1, B: 2, C: 5
+MOVE: A -> B, 1
+A: 20, B: 1, C: 5
+MOVE: C -> A, 5
+A: 5, B: 1, C: 6
+MOVE: B -> C, 1
+A: 5, B: 2, C: 1
+MOVE: B-> A, 2
+A: 2, B: 3, C: 1
+MOVE: C -> A, 1
+A: 1, B: 3, C: 6
+MOVE: B -> C, 3
+A: 1, B: 4, C: 3
+MOVE: A -> B, 1
+A: 2, B: 1, C: 3
+MOVE: A -> C, 2
+A: 5, B: 1, C: 2
+MOVE: B -> C, 1
+A: 5, B: 4, C: 1
+MOVE: B-> A, 4
+A: 4, B: 7, C: 1
+MOVE: C -> A, 1
+A: 1, B: 7, C: 2
+MOVE: C -> B, 2
+A: 1, B: 2, C: 3
+MOVE: A -> B, 1
+A: 4, B: 1, C: 3
+MOVE: C -> A, 3
+A: 3, B: 1, C: 6
+MOVE: B -> C, 1
+A: 3, B: 2, C: 1
+MOVE: B-> A, 2
+A: 2, B: 7, C: 1
+MOVE: C -> A, 1
+A: 1, B: 7, C: 6
+MOVE: C -> B, 6
+A: 1, B: 6, C: 20
+MOVE: A -> B, 1
+A: 2, B: 1, C: 20
+MOVE: A -> C, 2
+A: 3, B: 1, C: 2
+MOVE: B -> C, 1
+A: 3, B: 6, C: 1
+MOVE: A -> B, 3
+A: 4, B: 3, C: 1
+MOVE: C -> A, 1
+A: 1, B: 3, C: 2
+MOVE: C -> B, 2
+A: 1, B: 2, C: 20
+MOVE: A -> B, 1
+A: 4, B: 1, C: 20
+MOVE: A -> C, 4
+A: 5, B: 1, C: 4
+MOVE: B -> C, 1
+A: 5, B: 2, C: 1
+MOVE: B-> A, 2
+A: 2, B: 3, C: 1
+MOVE: C -> A, 1
+A: 1, B: 3, C: 4
+MOVE: B -> C, 3
+A: 1, B: 6, C: 3
+MOVE: A -> B, 1
+A: 2, B: 1, C: 3
+MOVE: A -> C, 2
+A: 5, B: 1, C: 2
+MOVE: B -> C, 1
+A: 5, B: 6, C: 1
+MOVE: A -> B, 5
+A: 20, B: 5, C: 1
+MOVE: C -> A, 1
+A: 1, B: 5, C: 2
+MOVE: C -> B, 2
+A: 1, B: 2, C: 3
+MOVE: A -> B, 1
+A: 20, B: 1, C: 3
+MOVE: C -> A, 3
+A: 3, B: 1, C: 4
+MOVE: B -> C, 1
+A: 3, B: 2, C: 1
+MOVE: B-> A, 2
+A: 2, B: 5, C: 1
+MOVE: C -> A, 1
+A: 1, B: 5, C: 4
+MOVE: C -> B, 4
+A: 1, B: 4, C: 20
+MOVE: A -> B, 1
+A: 2, B: 1, C: 20
+MOVE: A -> C, 2
+A: 3, B: 1, C: 2
+MOVE: B -> C, 1
+A: 3, B: 4, C: 1
+MOVE: A -> B, 3
+A: 20, B: 3, C: 1
+MOVE: C -> A, 1
+A: 1, B: 3, C: 2
+MOVE: C -> B, 2
+A: 1, B: 2, C: 20
+MOVE: A -> B, 1
+Success in 127 moves!
+A: 1, B: 20, C: 20
+MOVE: A -> B, 1
+A: 2, B: 1, C: 20
+MOVE: A -> C, 2
+A: 3, B: 1, C: 2
+MOVE: B -> C, 1
+A: 3, B: 20, C: 1
+MOVE: A -> B, 3
+A: 4, B: 3, C: 1
+MOVE: C -> A, 1
+A: 1, B: 3, C: 2
+MOVE: C -> B, 2
+A: 1, B: 2, C: 20
+MOVE: A -> B, 1
+A: 4, B: 1, C: 20
+MOVE: A -> C, 4
+A: 5, B: 1, C: 4
+MOVE: B -> C, 1
+A: 5, B: 2, C: 1
+MOVE: B-> A, 2
+A: 2, B: 3, C: 1
+MOVE: C -> A, 1
+A: 1, B: 3, C: 4
+MOVE: B -> C, 3
+A: 1, B: 20, C: 3
+MOVE: A -> B, 1
+A: 2, B: 1, C: 3
+MOVE: A -> C, 2
+A: 5, B: 1, C: 2
+MOVE: B -> C, 1
+A: 5, B: 20, C: 1
+MOVE: A -> B, 5
+A: 6, B: 5, C: 1
+MOVE: C -> A, 1
+A: 1, B: 5, C: 2
+MOVE: C -> B, 2
+A: 1, B: 2, C: 3
+MOVE: A -> B, 1
+A: 6, B: 1, C: 3
+MOVE: C -> A, 3
+A: 3, B: 1, C: 4
+MOVE: B -> C, 1
+A: 3, B: 2, C: 1
+MOVE: B-> A, 2
+A: 2, B: 5, C: 1
+MOVE: C -> A, 1
+A: 1, B: 5, C: 4
+MOVE: C -> B, 4
+A: 1, B: 4, C: 20
+MOVE: A -> B, 1
+A: 2, B: 1, C: 20
+MOVE: A -> C, 2
+A: 3, B: 1, C: 2
+MOVE: B -> C, 1
+A: 3, B: 4, C: 1
+MOVE: A -> B, 3
+A: 6, B: 3, C: 1
+MOVE: C -> A, 1
+A: 1, B: 3, C: 2
+MOVE: C -> B, 2
+A: 1, B: 2, C: 20
+MOVE: A -> B, 1
+A: 6, B: 1, C: 20
+MOVE: A -> C, 6
+A: 7, B: 1, C: 6
+MOVE: B -> C, 1
+A: 7, B: 2, C: 1
+MOVE: B-> A, 2
+A: 2, B: 3, C: 1
+MOVE: C -> A, 1
+A: 1, B: 3, C: 6
+MOVE: B -> C, 3
+A: 1, B: 4, C: 3
+MOVE: A -> B, 1
+A: 2, B: 1, C: 3
+MOVE: A -> C, 2
+A: 7, B: 1, C: 2
+MOVE: B -> C, 1
+A: 7, B: 4, C: 1
+MOVE: B-> A, 4
+A: 4, B: 5, C: 1
+MOVE: C -> A, 1
+A: 1, B: 5, C: 2
+MOVE: C -> B, 2
+A: 1, B: 2, C: 3
+MOVE: A -> B, 1
+A: 4, B: 1, C: 3
+MOVE: C -> A, 3
+A: 3, B: 1, C: 6
+MOVE: B -> C, 1
+A: 3, B: 2, C: 1
+MOVE: B-> A, 2
+A: 2, B: 5, C: 1
+MOVE: C -> A, 1
+A: 1, B: 5, C: 6
+MOVE: B -> C, 5
+A: 1, B: 20, C: 5
+MOVE: A -> B, 1
+A: 2, B: 1, C: 5
+MOVE: A -> C, 2
+A: 3, B: 1, C: 2
+MOVE: B -> C, 1
+A: 3, B: 20, C: 1
+MOVE: A -> B, 3
+A: 4, B: 3, C: 1
+MOVE: C -> A, 1
+A: 1, B: 3, C: 2
+MOVE: C -> B, 2
+A: 1, B: 2, C: 5
+MOVE: A -> B, 1
+A: 4, B: 1, C: 5
+MOVE: A -> C, 4
+A: 7, B: 1, C: 4
+MOVE: B -> C, 1
+A: 7, B: 2, C: 1
+MOVE: B-> A, 2
+A: 2, B: 3, C: 1
+MOVE: C -> A, 1
+A: 1, B: 3, C: 4
+MOVE: B -> C, 3
+A: 1, B: 20, C: 3
+MOVE: A -> B, 1
+A: 2, B: 1, C: 3
+MOVE: A -> C, 2
+A: 7, B: 1, C: 2
+MOVE: B -> C, 1
+A: 7, B: 20, C: 1
+MOVE: A -> B, 7
+A: 8, B: 7, C: 1
+MOVE: C -> A, 1
+A: 1, B: 7, C: 2
+MOVE: C -> B, 2
+A: 1, B: 2, C: 3
+MOVE: A -> B, 1
+A: 8, B: 1, C: 3
+MOVE: C -> A, 3
+A: 3, B: 1, C: 4
+MOVE: B -> C, 1
+A: 3, B: 2, C: 1
+MOVE: B-> A, 2
+A: 2, B: 7, C: 1
+MOVE: C -> A, 1
+A: 1, B: 7, C: 4
+MOVE: C -> B, 4
+A: 1, B: 4, C: 5
+MOVE: A -> B, 1
+A: 2, B: 1, C: 5
+MOVE: A -> C, 2
+A: 3, B: 1, C: 2
+MOVE: B -> C, 1
+A: 3, B: 4, C: 1
+MOVE: A -> B, 3
+A: 8, B: 3, C: 1
+MOVE: C -> A, 1
+A: 1, B: 3, C: 2
+MOVE: C -> B, 2
+A: 1, B: 2, C: 5
+MOVE: A -> B, 1
+A: 8, B: 1, C: 5
+MOVE: C -> A, 5
+A: 5, B: 1, C: 6
+MOVE: B -> C, 1
+A: 5, B: 2, C: 1
+MOVE: B-> A, 2
+A: 2, B: 3, C: 1
+MOVE: C -> A, 1
+A: 1, B: 3, C: 6
+MOVE: B -> C, 3
+A: 1, B: 4, C: 3
+MOVE: A -> B, 1
+A: 2, B: 1, C: 3
+MOVE: A -> C, 2
+A: 5, B: 1, C: 2
+MOVE: B -> C, 1
+A: 5, B: 4, C: 1
+MOVE: B-> A, 4
+A: 4, B: 7, C: 1
+MOVE: C -> A, 1
+A: 1, B: 7, C: 2
+MOVE: C -> B, 2
+A: 1, B: 2, C: 3
+MOVE: A -> B, 1
+A: 4, B: 1, C: 3
+MOVE: C -> A, 3
+A: 3, B: 1, C: 6
+MOVE: B -> C, 1
+A: 3, B: 2, C: 1
+MOVE: B-> A, 2
+A: 2, B: 7, C: 1
+MOVE: C -> A, 1
+A: 1, B: 7, C: 6
+MOVE: C -> B, 6
+A: 1, B: 6, C: 20
+MOVE: A -> B, 1
+A: 2, B: 1, C: 20
+MOVE: A -> C, 2
+A: 3, B: 1, C: 2
+MOVE: B -> C, 1
+A: 3, B: 6, C: 1
+MOVE: A -> B, 3
+A: 4, B: 3, C: 1
+MOVE: C -> A, 1
+A: 1, B: 3, C: 2
+MOVE: C -> B, 2
+A: 1, B: 2, C: 20
+MOVE: A -> B, 1
+A: 4, B: 1, C: 20
+MOVE: A -> C, 4
+A: 5, B: 1, C: 4
+MOVE: B -> C, 1
+A: 5, B: 2, C: 1
+MOVE: B-> A, 2
+A: 2, B: 3, C: 1
+MOVE: C -> A, 1
+A: 1, B: 3, C: 4
+MOVE: B -> C, 3
+A: 1, B: 6, C: 3
+MOVE: A -> B, 1
+A: 2, B: 1, C: 3
+MOVE: A -> C, 2
+A: 5, B: 1, C: 2
+MOVE: B -> C, 1
+A: 5, B: 6, C: 1
+MOVE: A -> B, 5
+A: 8, B: 5, C: 1
+MOVE: C -> A, 1
+A: 1, B: 5, C: 2
+MOVE: C -> B, 2
+A: 1, B: 2, C: 3
+MOVE: A -> B, 1
+A: 8, B: 1, C: 3
+MOVE: C -> A, 3
+A: 3, B: 1, C: 4
+MOVE: B -> C, 1
+A: 3, B: 2, C: 1
+MOVE: B-> A, 2
+A: 2, B: 5, C: 1
+MOVE: C -> A, 1
+A: 1, B: 5, C: 4
+MOVE: C -> B, 4
+A: 1, B: 4, C: 20
+MOVE: A -> B, 1
+A: 2, B: 1, C: 20
+MOVE: A -> C, 2
+A: 3, B: 1, C: 2
+MOVE: B -> C, 1
+A: 3, B: 4, C: 1
+MOVE: A -> B, 3
+A: 8, B: 3, C: 1
+MOVE: C -> A, 1
+A: 1, B: 3, C: 2
+MOVE: C -> B, 2
+A: 1, B: 2, C: 20
+MOVE: A -> B, 1
+A: 8, B: 1, C: 20
+MOVE: A -> C, 8
+A: 20, B: 1, C: 8
+MOVE: B -> C, 1
+A: 20, B: 2, C: 1
+MOVE: B-> A, 2
+A: 2, B: 3, C: 1
+MOVE: C -> A, 1
+A: 1, B: 3, C: 8
+MOVE: B -> C, 3
+A: 1, B: 4, C: 3
+MOVE: A -> B, 1
+A: 2, B: 1, C: 3
+MOVE: A -> C, 2
+A: 20, B: 1, C: 2
+MOVE: B -> C, 1
+A: 20, B: 4, C: 1
+MOVE: B-> A, 4
+A: 4, B: 5, C: 1
+MOVE: C -> A, 1
+A: 1, B: 5, C: 2
+MOVE: C -> B, 2
+A: 1, B: 2, C: 3
+MOVE: A -> B, 1
+A: 4, B: 1, C: 3
+MOVE: C -> A, 3
+A: 3, B: 1, C: 8
+MOVE: B -> C, 1
+A: 3, B: 2, C: 1
+MOVE: B-> A, 2
+A: 2, B: 5, C: 1
+MOVE: C -> A, 1
+A: 1, B: 5, C: 8
+MOVE: B -> C, 5
+A: 1, B: 6, C: 5
+MOVE: A -> B, 1
+A: 2, B: 1, C: 5
+MOVE: A -> C, 2
+A: 3, B: 1, C: 2
+MOVE: B -> C, 1
+A: 3, B: 6, C: 1
+MOVE: A -> B, 3
+A: 4, B: 3, C: 1
+MOVE: C -> A, 1
+A: 1, B: 3, C: 2
+MOVE: C -> B, 2
+A: 1, B: 2, C: 5
+MOVE: A -> B, 1
+A: 4, B: 1, C: 5
+MOVE: A -> C, 4
+A: 20, B: 1, C: 4
+MOVE: B -> C, 1
+A: 20, B: 2, C: 1
+MOVE: B-> A, 2
+A: 2, B: 3, C: 1
+MOVE: C -> A, 1
+A: 1, B: 3, C: 4
+MOVE: B -> C, 3
+A: 1, B: 6, C: 3
+MOVE: A -> B, 1
+A: 2, B: 1, C: 3
+MOVE: A -> C, 2
+A: 20, B: 1, C: 2
+MOVE: B -> C, 1
+A: 20, B: 6, C: 1
+MOVE: B-> A, 6
+A: 6, B: 7, C: 1
+MOVE: C -> A, 1
+A: 1, B: 7, C: 2
+MOVE: C -> B, 2
+A: 1, B: 2, C: 3
+MOVE: A -> B, 1
+A: 6, B: 1, C: 3
+MOVE: C -> A, 3
+A: 3, B: 1, C: 4
+MOVE: B -> C, 1
+A: 3, B: 2, C: 1
+MOVE: B-> A, 2
+A: 2, B: 7, C: 1
+MOVE: C -> A, 1
+A: 1, B: 7, C: 4
+MOVE: C -> B, 4
+A: 1, B: 4, C: 5
+MOVE: A -> B, 1
+A: 2, B: 1, C: 5
+MOVE: A -> C, 2
+A: 3, B: 1, C: 2
+MOVE: B -> C, 1
+A: 3, B: 4, C: 1
+MOVE: A -> B, 3
+A: 6, B: 3, C: 1
+MOVE: C -> A, 1
+A: 1, B: 3, C: 2
+MOVE: C -> B, 2
+A: 1, B: 2, C: 5
+MOVE: A -> B, 1
+A: 6, B: 1, C: 5
+MOVE: C -> A, 5
+A: 5, B: 1, C: 8
+MOVE: B -> C, 1
+A: 5, B: 2, C: 1
+MOVE: B-> A, 2
+A: 2, B: 3, C: 1
+MOVE: C -> A, 1
+A: 1, B: 3, C: 8
+MOVE: B -> C, 3
+A: 1, B: 4, C: 3
+MOVE: A -> B, 1
+A: 2, B: 1, C: 3
+MOVE: A -> C, 2
+A: 5, B: 1, C: 2
+MOVE: B -> C, 1
+A: 5, B: 4, C: 1
+MOVE: B-> A, 4
+A: 4, B: 7, C: 1
+MOVE: C -> A, 1
+A: 1, B: 7, C: 2
+MOVE: C -> B, 2
+A: 1, B: 2, C: 3
+MOVE: A -> B, 1
+A: 4, B: 1, C: 3
+MOVE: C -> A, 3
+A: 3, B: 1, C: 8
+MOVE: B -> C, 1
+A: 3, B: 2, C: 1
+MOVE: B-> A, 2
+A: 2, B: 7, C: 1
+MOVE: C -> A, 1
+A: 1, B: 7, C: 8
+MOVE: B -> C, 7
+A: 1, B: 20, C: 7
+MOVE: A -> B, 1
+A: 2, B: 1, C: 7
+MOVE: A -> C, 2
+A: 3, B: 1, C: 2
+MOVE: B -> C, 1
+A: 3, B: 20, C: 1
+MOVE: A -> B, 3
+A: 4, B: 3, C: 1
+MOVE: C -> A, 1
+A: 1, B: 3, C: 2
+MOVE: C -> B, 2
+A: 1, B: 2, C: 7
+MOVE: A -> B, 1
+A: 4, B: 1, C: 7
+MOVE: A -> C, 4
+A: 5, B: 1, C: 4
+MOVE: B -> C, 1
+A: 5, B: 2, C: 1
+MOVE: B-> A, 2
+A: 2, B: 3, C: 1
+MOVE: C -> A, 1
+A: 1, B: 3, C: 4
+MOVE: B -> C, 3
+A: 1, B: 20, C: 3
+MOVE: A -> B, 1
+A: 2, B: 1, C: 3
+MOVE: A -> C, 2
+A: 5, B: 1, C: 2
+MOVE: B -> C, 1
+A: 5, B: 20, C: 1
+MOVE: A -> B, 5
+A: 6, B: 5, C: 1
+MOVE: C -> A, 1
+A: 1, B: 5, C: 2
+MOVE: C -> B, 2
+A: 1, B: 2, C: 3
+MOVE: A -> B, 1
+A: 6, B: 1, C: 3
+MOVE: C -> A, 3
+A: 3, B: 1, C: 4
+MOVE: B -> C, 1
+A: 3, B: 2, C: 1
+MOVE: B-> A, 2
+A: 2, B: 5, C: 1
+MOVE: C -> A, 1
+A: 1, B: 5, C: 4
+MOVE: C -> B, 4
+A: 1, B: 4, C: 7
+MOVE: A -> B, 1
+A: 2, B: 1, C: 7
+MOVE: A -> C, 2
+A: 3, B: 1, C: 2
+MOVE: B -> C, 1
+A: 3, B: 4, C: 1
+MOVE: A -> B, 3
+A: 6, B: 3, C: 1
+MOVE: C -> A, 1
+A: 1, B: 3, C: 2
+MOVE: C -> B, 2
+A: 1, B: 2, C: 7
+MOVE: A -> B, 1
+A: 6, B: 1, C: 7
+MOVE: A -> C, 6
+A: 20, B: 1, C: 6
+MOVE: B -> C, 1
+A: 20, B: 2, C: 1
+MOVE: B-> A, 2
+A: 2, B: 3, C: 1
+MOVE: C -> A, 1
+A: 1, B: 3, C: 6
+MOVE: B -> C, 3
+A: 1, B: 4, C: 3
+MOVE: A -> B, 1
+A: 2, B: 1, C: 3
+MOVE: A -> C, 2
+A: 20, B: 1, C: 2
+MOVE: B -> C, 1
+A: 20, B: 4, C: 1
+MOVE: B-> A, 4
+A: 4, B: 5, C: 1
+MOVE: C -> A, 1
+A: 1, B: 5, C: 2
+MOVE: C -> B, 2
+A: 1, B: 2, C: 3
+MOVE: A -> B, 1
+A: 4, B: 1, C: 3
+MOVE: C -> A, 3
+A: 3, B: 1, C: 6
+MOVE: B -> C, 1
+A: 3, B: 2, C: 1
+MOVE: B-> A, 2
+A: 2, B: 5, C: 1
+MOVE: C -> A, 1
+A: 1, B: 5, C: 6
+MOVE: B -> C, 5
+A: 1, B: 20, C: 5
+MOVE: A -> B, 1
+A: 2, B: 1, C: 5
+MOVE: A -> C, 2
+A: 3, B: 1, C: 2
+MOVE: B -> C, 1
+A: 3, B: 20, C: 1
+MOVE: A -> B, 3
+A: 4, B: 3, C: 1
+MOVE: C -> A, 1
+A: 1, B: 3, C: 2
+MOVE: C -> B, 2
+A: 1, B: 2, C: 5
+MOVE: A -> B, 1
+A: 4, B: 1, C: 5
+MOVE: A -> C, 4
+A: 20, B: 1, C: 4
+MOVE: B -> C, 1
+A: 20, B: 2, C: 1
+MOVE: B-> A, 2
+A: 2, B: 3, C: 1
+MOVE: C -> A, 1
+A: 1, B: 3, C: 4
+MOVE: B -> C, 3
+A: 1, B: 20, C: 3
+MOVE: A -> B, 1
+A: 2, B: 1, C: 3
+MOVE: A -> C, 2
+A: 20, B: 1, C: 2
+MOVE: B -> C, 1
+Success in 255 moves!

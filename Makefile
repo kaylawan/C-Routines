@@ -1,10 +1,13 @@
-CFLAGS = -Werror -Wall -O0 -g -std=c11
+CFLAGS = -Werror -Wall -O3 -g -std=c11
 
-HEAP_C_FILES=${wildcard heap/*.c}
-HEAP_O_FILES=${subst .c,.o,${HEAP_C_FILES}}
+LIB_C_FILES=${wildcard src/*.c}
+LIB_S_FILES=${wildcard src/*.s}
+LIB_OC_FILES=${subst .c,.o,${LIB_C_FILES}}
+LIB_OS_FILES=${subst .s,.o,${LIB_S_FILES}}
+LIB_O_FILES=${LIB_OS_FILES} ${LIB_OC_FILES}
 C_FILES=${wildcard *.c}
 O_FILES=${subst .c,.o,${C_FILES}}
-TEST_NAMES=${subst .c,,${C_FILES}}
+TEST_NAMES=${sort ${subst .c,,${C_FILES}}}
 TEST_OUTS=${addsuffix .out,${TEST_NAMES}}
 TEST_DIFFS=${addsuffix .diff,${TEST_NAMES}}
 TEST_RESULTS=${addsuffix .result,${TEST_NAMES}}
@@ -13,15 +16,18 @@ TEST_RUNS=${addsuffix .run,${TEST_NAMES}}
 
 all : ${TEST_RUNS}
 
-${TEST_RUNS} : %.run : Makefile %.o ${HEAP_O_FILES}
+${TEST_RUNS} : %.run : Makefile %.o ${LIB_O_FILES}
 	@-rm -f $*
-	-gcc -MMD ${CFLAGS} -o $@ $*.o ${HEAP_O_FILES}
+	gcc -MMD ${CFLAGS} -o $@ $*.o ${LIB_O_FILES}
 
-${HEAP_O_FILES} : %.o : Makefile %.c
-	-gcc -MMD ${CFLAGS} -c -o $@ $*.c
+${LIB_OC_FILES} : %.o : Makefile %.c
+	gcc -MMD ${CFLAGS} -c -o $@ $*.c
+
+${LIB_OS_FILES} : %.o : Makefile %.s
+	gcc -MMD ${CFLAGS} -c -o $@ $*.s
 
 ${O_FILES} : %.o : Makefile %.c
-	-gcc -MMD ${CFLAGS} -c -o $@ $*.c
+	gcc -MMD ${CFLAGS} -c -o $@ $*.c
 
 ${TEST_OUTS} : %.out : Makefile %.run
 	@echo "failed to run" > $*.out
@@ -42,10 +48,10 @@ ${TEST_TESTS} : %.test : Makefile %.result
 test : ${TEST_TESTS};
 
 clean:
-	-rm -rf ${PROG} *.run *.out *.diff *.result *.d *.o heap/*.d heap/*.o *.time *.err
+	-rm -rf ${PROG} *.out *.diff *.result *.d *.o src/*.d src/*.o *.time *.err
 
 -include *.d
--include heap/*.d
+-include src/*.d
 
 
 ######### remote things ##########

@@ -1,61 +1,103 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <stdint.h>
-#include "heap/heap.h"
-#include "heap/panic.h"
+#include <inttypes.h>
 
-#define HEAP_SIZE 100000
+#include "src/go.h"
 
-long heap_size = HEAP_SIZE;
-long the_heap[HEAP_SIZE/sizeof(long)];
+//Test 1
+//This test tests thee ability to call other methods from inside one method as well as returning AsInt values and adding 1 to them sequentially.
+//It checks that the routine calls each action in order as well as returning from main.
 
-int main(){
-    long m1 = mCount;
-    long f1 = fCount;
-    // test 1: malloc test
-    uint64_t blocks[100];
-    for(int i = 0; i < 100; i++) {
-        blocks[i] = (uint64_t)(malloc(8));
-        if (blocks[i] == 0) {
-            printf("test 1 fail at block: %i\n", (i + 1));
-            return 0;
-        }
-        m1++;
+int num = 0;
+
+void JThroughZ(){
+    printf("this should never be called \n");
+}
+
+void a() {
+    printf("made it to a \n");
+    send(me(),asInt(num));
+    if (num < 20) {
+        num +=1;
+        again();
     }
-    puts("malloc test pass");
+}
+void b() {
+    a();
+}
+void c() {
+    b();
+}
+void d() {
+    c();
+}
+void e() {
+    d();
+}
+void f() {
+    e();
+}
+void g() {
+    f();
+}
+void h() {
+    g();
+}
+Value i(){
+    printf("in i \n");
+    h();
+    return asInt(1800);
+}
 
-    // free test
-    for(int i = 99; i >= 0; i--) {
-        free((void*)blocks[i]);
-        f1++;
+int main() {
+    //tests channel creation
+    Channel* ch = go(i);
+    if(ch==NULL){
+        printf("incorrect channel creation implementation \n");
     }
-    puts("free test pass");
-
-    //tests that malloc/free counts are still imcemented even when they return NULL
-    void *mallocZero = malloc(0);
-    m1++;
-    void * mallocTooBig=malloc(892737828);
-    m1++;
-    if(m1!=mCount){
-        printf("count doesn't match \n");
-    }
-    else{
-        printf("count match \n");
-    }
-    if(mallocZero != NULL || mallocTooBig != NULL){
-        printf("malloc wrong \n");
-    } else{
-        printf("malloc param test pass \n");
-    }
-
-    for(int i=0;i<100;i++){
-        void * pointer = malloc(16);
-        if(pointer==NULL){
-            printf("unable to malloc free space \n");
+    while (true) {
+        int x = receive(ch).asInt;
+        if (x == 1800){
+            return false;
         }
         else{
-            free(pointer);
+            printf("%d\n",x);
+            printf("%d\n",x+1);
         }
     }
-    printf("malloc and free test pass \n");
+    printf("this should never be printed out\n");
+    printf("this should never be printed out either\n");
+    return 0;
+    printf("this should never be printed out\n");
 }
+/*#include <stdio.h>
+
+#include "src/go.h"
+
+Value pointer(){
+    Value val = receive(me());
+    return asPointer(val.asPointer);
+}
+
+Value testShort(){
+    Value val = receive(me());
+    return asShort(val.asShort);
+}
+
+int main(){
+    Channel * ch1 = go(pointer);
+    int integer = 20;
+    int * p = &integer;
+    send(ch1, asPointer(p));
+    if(receive(ch1).asPointer == NULL){
+        printf("channel 1 receive should not be null");
+        return 0;
+    }
+
+    Channel * ch2 = go(testShort);
+    send(ch2, asShort(32767));
+    printf("%hu\n", receive(ch2).asShort);
+
+    
+    send(ch2, asInt(10));
+    printf("%u\n", receive(ch2).asInt); //this should not print
+}*/
