@@ -1,32 +1,11 @@
-Due date:
-    3/08/2023 @ 11:59pm test case
-    3/10/2023 @ 11:59pm code
-
-Objective:
-~~~~~~~~~~
-
-- Learn how to implement (and work with) new control abstractions
-
-Important:
-~~~~~~~~~~
-
-The spec will follow but the given tests are also part of the spec.
-
 Description:
 ~~~~~~~~~~~~
 
-We will implement a form of communicating sequential processes (CSP). We will
-not call them processes in order to avoid confusion with Unix processes so
-we'll borrow the golang terminology and call them c-routines. Go calls them
-go-routines, a clever play on the term coroutines, functions that alternate
-their execution as opposed to having a strict caller-callee relationship.
+In this project, we will implement a form of communicating sequential processes (CSP), which we will refer to as "c-routines." Unlike traditional processes, these c-routines are inspired by Go's goroutines and allow for concurrent execution without a strict caller-callee relationship.
 
-The key to figuring out how to make those things work is to think of the
-execution stack as a data structure and allow your code to manipulate
-stacks, create new ones, insert them in queues, switch between then, etc.
+The key concept is to treat the execution stack as a data structure, allowing code to manipulate stacks, create new ones, insert them into queues, switch between them, and more.
 
-Stack size for c-routines created by calling the 'go' functions should
-be limited to 8KB.
+Stack size for c-routines created by calling the 'go' functions is limited to 8KB.
 
 Starting a c-routine:
 ~~~~~~~~~~~~~~~~~~~~~
@@ -149,42 +128,7 @@ extern void again(void);                 // restart the current c-routine
                                          // takes it back to its starting
                                          // point
 
-How do you start?
 ~~~~~~~~~~~~~~~~~
-
-This assignment might look overwhelming but it's easier than you think.
-
-- Read the "magic" code in "magic.s" and make sure you understand it. The
-  best way is to trace through its execution on paper (or a whiteboard)
-
-- Look at the Routine struct and think about the other information you'd need
-  to store in it
-
-- Look at the Queue struct and its associated functions (would be nice if C
-  had methods?). Think about how you'd use that to represent things like
-  c-routines that are ready to run, those that we waiting to send messages,
-  those that waiting to receive messages, etc.
-
-- Look at the test cases t0.in, t1.in, ..., and try to visualize their
-  execution
-
-What you need to do:
-~~~~~~~~~~~~~~~~~~~~
-
-(1) Answer the question in REPORT.txt
-
-(2) Add a test case (<csid>.test and <csid>.ok, less then 2000 characters each)
-
-     - <csid>.in contains a main program written in C
-     - <csid>.ok contains the expected output
-
-Please keep in mind that your test case can't rely in the specific order
-of interleaving between c-routines, only on the causal relationships
-established by channel communications:
-
-     - a message can not be received before it is sent
-
-The safest thing to do is to limit printing to a single c-routine
 
 To compile:
 ~~~~~~~~~~~
