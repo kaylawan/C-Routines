@@ -1,0 +1,12 @@
+Memory Allocation and Management in C
+
+Objective:
+•Implemented malloc and free functions from scratch, which are fundamental in memory allocation and management in C. To ensure the correctness of our implementation, we follow these steps:
+
+The heap/heap.h header file defines four crucial variables:
+•heap_size: This variable contains the total heap size in bytes, which is specified by the test.
+•the_heap: This variable represents the memory allocated for the heap, as specified by the test.
+•mCount: It keeps track of the number of times malloc is called, and you should define and update it in the heap.c file.
+•fCount: Similarly, this variable tracks the number of times free is called, and you should define and update it in the heap.c file.
+
+The implementation solely utilizes the memory allocated by the the_heap variable for managing the heap. We avoid using any additional memory sources.
